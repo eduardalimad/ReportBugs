@@ -1,0 +1,47 @@
+.container{
+    background-color: #373148;
+    height: 37.31px;
+    width: 100%;
+    border-radius: 0.348rem;
+    border: none;
+    padding: 1rem;
+}
+.containerInputComBorda{
+    @extend .container;
+    border-bottom: solid 1px #4C4463;
+    border-radius: 0;
+    width: 95%;
+    margin: auto;
+    
+}
+.containerSelect{
+    @extend .container;
+    padding: 0;
+}
+.containerTitle{
+    font-size: small;
+    padding: 1rem;
+    padding-left: .5rem;
+    padding-bottom: 0;
+    width: 95%;
+    margin: auto;
+    color: #9A8AC8;
+}
+.containerTextArea{
+    @extend .container;
+    height: 248.49px;
+    width: 100%;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+
+    .textarea{
+        height: 62%;
+        width: 95%;
+        margin: auto;
+        background: transparent;
+        border: none;
+        padding: 1em;
+    }
+}
+

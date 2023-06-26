@@ -1,0 +1,95 @@
+.container{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 5rem 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 10px;
+    width: 100%;
+}
+    
+.main{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 1fr 20px;
+    grid-column-gap: 2rem;
+    grid-row-gap: 1rem;
+    width: 100%;
+    align-items: center;
+    padding: .2em;
+
+    .containerLeft{
+        grid-area: 1 / 1 / 2 / 7;
+        display: flex;
+        justify-content: right;
+    
+        .form{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0.5rem;
+            min-width: 62%;
+            min-height: 357.25px;
+    
+            .title{
+                font-size: small;
+                padding: 1rem;
+                padding-left: 0.2rem;
+                padding-bottom: 0em;
+                padding-top: 0;
+                width: 100%;
+                margin: auto;
+                color: #ffff;
+            
+            }
+            textarea:focus, input:focus, select:focus {
+                border: none;
+                outline: 0;
+                font-family: 'Inter', sans-serif;
+                color: #9A8AC8;
+                border: solid 1px #22C26C;
+            }
+        }
+    }
+    .containerRight{
+        grid-area: 1 / 7 / 2 / 13;
+        display: flex;
+        justify-content: start;
+    
+        .containerIcon{
+            min-width: 62%;
+            min-height: 384.25px;
+            border-radius: 5.55px;
+            border: solid 1px #373148;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+    
+            .icon{
+                width: 8rem;
+                height: 8rem;
+            }
+    } 
+    }
+    .containerButton{
+        grid-area: 3/3/3/13;
+        display: flex;
+        justify-content: flex-end;
+        width: 79%;
+        border-top: solid .4px #4C4463;
+        padding-top: 1rem;
+    }
+}   
+
+@media only screen and (max-width: 680px) { 
+    .main{
+        display: flex;
+        padding-left: 0;
+        flex-direction: column;
+        .containerButton{
+            border: none;
+        }
+        .containerIcon{
+            min-width: 333.88px !important;
+        }
+    }
+}

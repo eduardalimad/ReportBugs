@@ -1,0 +1,29 @@
+.containerHeader{
+    width: 100%;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 7em;
+    padding-right: 7em;
+
+    .containerLogo{
+        display: flex;
+        align-items: center;
+        font-size: 20px;
+        font-family: 'Lora', serif;
+        
+    }
+    .containerNav{
+        display: flex;
+        align-items: center;
+        gap:  1rem;
+    }
+}
+
+@media only screen and (max-width: 680px) { 
+.containerHeader{
+    padding-left: 2em;
+    padding-right: 2em;
+    justify-content: space-between;
+}
+}
