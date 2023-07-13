@@ -1,0 +1,20 @@
+
+.mainPage{
+    display: grid;
+    height: 50vh;
+    width: 100%;
+    justify-items: center;
+    align-content: center;
+
+    .labelContainer{
+        display: grid;
+        gap: 1rem;
+        width: calc(24rem - 8vw);
+        
+        .titleInput{
+            color: #ffffff;
+        }
+    
+    }
+
+}

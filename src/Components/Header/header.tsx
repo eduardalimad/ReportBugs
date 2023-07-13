@@ -2,8 +2,6 @@ import Image from 'next/image'
 import style from "./styleHeader.module.scss"
 import ButtonNav from "../Buttons/buttonHeader"
 
-
-
 export default function Header() {
   return (
     <div className={style.containerHeader}>
@@ -17,8 +15,8 @@ export default function Header() {
         <h3>bugas.</h3>
         </div>
     <nav className={style.containerNav}>
-        <ButtonNav propsTitle="Sobre"/>
-        <ButtonNav propsTitle="Meu Histórico"/>
+        <ButtonNav propsTitle="Sobre" slug="about"/>
+        <ButtonNav propsTitle="Histórico" slug="historico"/>
     </nav>
     </div>
     

@@ -22,13 +22,10 @@ export default function Home() {
 
         </section>
         <section className={style.containerRight}>
-          <div className={style.containerIcon}>
-
+          <label htmlFor="file"  className={style.containerIcon} >
             <BiImageAdd className={style.icon} />
-
-
-          </div>
-
+          </label>
+        
         </section>
         <section className={style.containerButton}>
           <Button propsTitle="ENVIAR" />

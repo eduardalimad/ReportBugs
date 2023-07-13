@@ -1,0 +1,31 @@
+.container{
+    display: grid;
+    grid-template: 1fr/repeat(12,1fr);
+    place-items: center;
+    grid-gap: 1rem;
+    .title{
+        width: 100%;
+        margin-top: 2rem;
+        grid-column: 4 / span 6;
+        color: #22c26c;
+        font-family: 'Lora', serif;
+        
+    }
+    .artigo{
+        width: 100%;
+        grid-column: 4 / span 6;
+        text-align: justify;
+        margin-bottom: 4rem;
+        font-size: 93.75%;
+
+        span{
+            color: #22c26c;
+        }
+    }
+}
+    
+
+
+@media only screen and (max-width: 680px) { 
+    
+}

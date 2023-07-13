@@ -1,10 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600&family=Poppins:ital,wght@0,100;0,300;0,400;0,600;1,200;1,300&display=swap');
+
 *{
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  color: #FFFFFF;
+  color: #9a8ac8;
+  
 }
 body {
   color: #FFFFFF;

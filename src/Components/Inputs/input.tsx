@@ -2,7 +2,7 @@ import style from "./styleInput.module.scss"
 
 interface props{
     typeStyle : 'screen one' | 'screen two';
-    propsType: String;
+    propsType: String| any;
 }
 
 export default function inputComponent({propsType, typeStyle}:props) {

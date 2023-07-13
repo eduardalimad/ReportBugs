@@ -5,7 +5,15 @@
     border-radius: 0.348rem;
     border: none;
     padding: 1rem;
+
+    input:focus, input:focus, select:focus, ::placeholder  {
+        box-shadow: none;
+        border: 0 none;
+        outline: 0;
+        color: rgb(255, 255, 255);
+    }
 }
+
 .containerInputComBorda{
     @extend .container;
     border-bottom: solid 1px #4C4463;
