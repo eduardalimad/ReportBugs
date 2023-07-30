@@ -1,7 +1,7 @@
 'use client'
 import style from './page.module.scss'
 import React, { useRef, useState } from 'react';
-import { BiImageAdd, BiTrash } from "react-icons/bi";
+import { BiImageAdd, BiTrash, BiWindowClose} from "react-icons/bi";
 import Modal from 'react-modal';
 import InputText from "../Components/Inputs/input"
 import InputSelect from "@/Components/Inputs/select"
@@ -96,7 +96,9 @@ export default function Home() {
           onRequestClose={() => setModalIsOpen(false)}
           contentLabel="Imagem"
         >
-          <button onClick={handleCloseModal} >close</button>
+          <a onClick={handleCloseModal} >
+            <BiWindowClose style={{ height: "1rem"}}/>
+            </a>
           <div className={style.modalContent}>
             {selectedImage &&
 
