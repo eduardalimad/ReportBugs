@@ -1,16 +1,16 @@
-import React, { useState } from "react";
+'use client'
+import React from 'react';
+interface CardImgProps {
+  src: string;
+  onClick?: () => void;
+}
 
-    const App =()=>{
-        const [selectedFile, setSelectedFile] = useState(null);
-        return (
-            <div className="App">
-            {/* <form>
-                <input
-                type="file"
-                value={selectedFile}
-                onChange={(e) => setSelectedFile(e.target.files[0])}
-                />
-            </form> */}
-            </div>
-        )
-    }
+const CardImg: React.FC<CardImgProps> = ({ src, onClick }) => {
+  return (
+    <>
+      <img src={src} alt="Imagem" style={{ width: '100%', height: '98%', objectFit: 'cover', borderRadius: '.2rem' }} onClick={onClick} />
+    </>
+  );
+};
+
+export default CardImg;

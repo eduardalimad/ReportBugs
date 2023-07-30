@@ -1,0 +1,113 @@
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 5rem 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 10px;
+  width: 100%;
+}
+
+.modalContent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.main {
+  display: grid;
+  width: 100%;
+  height: 70vh;
+  align-items: center;
+  grid-gap: 2rem;
+  padding: 0.2em;
+}
+.main .containerLeft {
+  grid-column: 3/span 3;
+  width: 100%;
+  height: 100%;
+}
+.main .containerLeft .form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  min-width: 62%;
+  min-height: 357.25px;
+}
+.main .containerLeft .form .title {
+  font-size: small;
+  padding: 1rem;
+  padding-left: 0.2rem;
+  padding-bottom: 0em;
+  padding-top: 0;
+  width: 100%;
+  margin: auto;
+  color: white;
+}
+.main .containerLeft .form textarea:focus, .main .containerLeft .form input:focus, .main .containerLeft .form select:focus {
+  border: none;
+  outline: 0;
+  font-family: "Inter", sans-serif;
+  color: #9A8AC8;
+  border: solid 1px #22C26C;
+}
+.main .containerRight {
+  grid-column: 7/span 4;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.main .containerRight .containerIcon {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border-radius: 5.55px;
+  border: solid 1px #373148;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.main .containerRight .containerIcon .btnDelete {
+  width: 100%;
+  background: hsla(257.14, 25%, 10.98%, 0.82);
+  border: none;
+  height: 1.5rem;
+}
+.main .containerRight .containerIcon .icon {
+  width: 8rem;
+  height: 8rem;
+  cursor: pointer;
+}
+.main .containerButton {
+  grid-area: 3/3/3/13;
+  display: flex;
+  justify-content: flex-end;
+  width: 79%;
+  border-top: solid 0.4px #4C4463;
+  padding-top: 1rem;
+}
+
+@media only screen and (max-width: 680px) {
+  .main {
+    display: flex;
+    padding-left: 0;
+    flex-direction: column;
+  }
+  .main .containerButton {
+    border: none;
+  }
+  .main .containerIcon {
+    min-width: 333.88px !important;
+    height: 90% !important;
+    position: inherit !important;
+  }
+  .main .containerLeft {
+    width: 92% !important;
+  }
+  .main .containerRight {
+    width: 92% !important;
+    position: inherit !important;
+  }
+}/*# sourceMappingURL=page.module.css.map */

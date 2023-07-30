@@ -1,5 +1,4 @@
 import style from "./styleInput.module.scss"
-
 interface props{
     typeStyle : 'screen one' | 'screen two';
     propsType: String| any;

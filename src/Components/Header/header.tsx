@@ -7,12 +7,13 @@ export default function Header() {
     <div className={style.containerHeader}>
         <div className={style.containerLogo}>
             <Image
-                src="/logo.png"
-                width={50}
-                height={50}
-                alt="Picture of the author"
+            src="/logo.png"
+            width={50}
+            height={50}
+            alt="Picture of the author"
+            
         />
-        <h3>bugas.</h3>
+        <a href='/'>bugas.</a>
         </div>
     <nav className={style.containerNav}>
         <ButtonNav propsTitle="Sobre" slug="about"/>

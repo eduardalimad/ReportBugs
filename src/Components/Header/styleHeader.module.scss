@@ -1,6 +1,5 @@
 .containerHeader{
     width: 100%;
-    z-index: 1;
     display: flex;
     justify-content: space-between;
     padding-left: 7em;
@@ -11,6 +10,9 @@
         align-items: center;
         font-size: 20px;
         font-family: 'Lora', serif;
+        a{
+            text-decoration: none;
+        }
         
     }
     .containerNav{
